@@ -15,6 +15,7 @@
   justify-content: center;
   position: relative;
 }
+
 .on-photo-text {
   color: white;
   text-align: center;
@@ -31,20 +32,16 @@
   top: 15%;
   left: 6%;
 }
-.on-photo-text {
+
+.on-photo-text-dscrpt {
   color: white;
-  text-align: center;
-  z-index: 1;
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  max-width: 579px;
-  height: 557px;
-  color: white;
-  column-gap: 25%;
-  top: 15%;
-  left: 6%;
+
+  font-family: Work Sans;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: 0.02em;
+  text-align: left;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }

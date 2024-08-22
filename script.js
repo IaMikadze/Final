@@ -206,3 +206,39 @@ document.addEventListener("DOMContentLoaded", function () {
     togglePassword.textContent = "Show";
   });
 });
+
+let allGuitars = [];
+
+async function fetchGuitars() {
+  const response = await fetch(
+    "https://api.mercadolibre.com/sites/MLA/search?q=guitar&category=MLA1132&limit=12"
+  );
+
+  if (response.ok) {
+    const data = await response.json();
+    return data.results.map((item) => ({
+      name: item.title,
+      price: item.price,
+    }));
+  } else {
+    console.error("Failed to fetch guitars");
+    return [];
+  }
+}
+
+function updateGuitarCards(guitars) {
+  const guitarCards = document.querySelectorAll(".guitar-card");
+
+  guitarCards.forEach((card, index) => {
+    if (index < guitars.length) {
+      const guitar = guitars[index];
+
+      textContent = console.log[index];
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", async function () {
+  allGuitars = await fetchGuitars();
+  updateGuitarCards(allGuitars);
+});
