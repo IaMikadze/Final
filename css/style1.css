@@ -31,17 +31,28 @@
   top: 15%;
   left: 6%;
 }
-.on-photo-text-dscrpt {
-  font-family: Work Sans;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 67.2px;
-  letter-spacing: 0.02em;
-  text-align: left;
+.on-photo-text {
+  color: white;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  max-width: 579px;
+  height: 557px;
+  color: white;
+  column-gap: 25%;
+  top: 15%;
+  left: 6%;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 .on-photo-text:hover {
   color: rgb(252, 177, 31);
+  -webkit-font-size: 60px;
   font-size: 60px;
+  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
@@ -87,10 +98,11 @@
 
 .menu-items:hover {
   color: rgb(252, 177, 31);
+  -webkit-font-size: 21px;
   font-size: 21px;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .fa-user {
   text-align: center;
   color: white;
@@ -217,6 +229,7 @@
   padding-top: 20px;
   transition: opacity 0.5s ease;
 }
+
 .guitar-card.show {
   opacity: 1;
 }
@@ -228,9 +241,10 @@
   gap: 0px;
   opacity: 0px;
 }
-
 .guitar-card:hover {
+  -webkit-transform: scale(105%, 105%);
   transform: scale(105%, 105%);
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 #seeMoreBtn,
