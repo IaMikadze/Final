@@ -220,17 +220,27 @@
 .guitar-card.show {
   opacity: 1;
 }
+.guitar-image {
+  width: 314px;
+  height: 260px;
+  top: 6px;
+  left: 42px;
+  gap: 0px;
+  opacity: 0px;
+}
 
 .guitar-card:hover {
   transform: scale(105%, 105%);
   transition: 0.4s ease-in-out;
 }
-#seeMoreBtn {
+#seeMoreBtn,
+#seeLessBtn {
   border-radius: 30px;
   height: 40px;
   width: 95px;
   border: none;
   background-color: rgba(37, 37, 37, 1);
+  margin-bottom: 15px;
 }
 /* texts */
 .product-description {
@@ -295,8 +305,20 @@
   background-color: rgba(37, 37, 37, 1);
   color: ghostwhite;
 }
+#seeMoreBtn:hover,
+#seeLessBtn:hover {
+  background-color: #fff;
+  color: rgba(37, 37, 37, 1);
+  box-shadow: rgb(191, 189, 189) 0.5px 0.5px 2px 2px;
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+}
 
 /* accordeon */
+.accord {
+  background-color: rgb(242, 238, 238);
+  padding: 10px;
+}
 
 .container-accord {
   max-width: 700px;
@@ -526,7 +548,7 @@
   width: 141px;
 
   color: white;
-  padding-top: 9px;
+  -top: 9px;
   font-family: Work Sans;
   font-size: 14px;
   font-weight: 400;
@@ -556,7 +578,6 @@
   left: 1133px;
   gap: 0px;
   opacity: 0px;
-  background-color: aqua;
 }
 .social {
   width: auto;

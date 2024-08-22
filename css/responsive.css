@@ -198,29 +198,18 @@
     display: flex;
   }
 
-  .footer-logo {
-    width: 255px;
-    height: 40px;
-    top: 115px;
-    left: 1133px;
-    gap: 0px;
-    opacity: 0px;
-  }
   .controls {
     flex-wrap: wrap;
   }
+
   .footer-logo {
-    width: 200px;
+    width: auto;
     height: 40px;
     top: 115px;
     left: 1133px;
     gap: 0px;
     opacity: 0px;
-    background-color: aqua;
   }
-}
-
-@media screen and (max-width: 600px) {
   .logo {
     width: 200px;
   }
@@ -249,7 +238,6 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin: auto;
     flex-wrap: wrap;
     padding: 0 8px;
     box-sizing: border-box;
@@ -274,5 +262,53 @@
       rgba(251, 251, 251, 1) 0%,
       rgba(211, 211, 211, 1) 100%
     );
+  }
+}
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 180px;
+  }
+  .on-photo-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: auto;
+    color: white;
+    column-gap: 25%;
+  }
+  .on-photo-text-dscrpt {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .footer-logo {
+    width: 150px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .my-account {
+    padding: 0;
+  }
+  .contact {
+    padding-right: 0px;
+  }
+  .footer-logo {
+    width: auto;
+    padding-left: 0px;
+  }
+  .guitar-image {
+    width: inherit;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
